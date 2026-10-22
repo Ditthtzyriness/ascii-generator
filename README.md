@@ -1,16 +1,16 @@
 <div align="center">
 
-# 🔥 ASCII Generator
+# 🖨 ASCII Forge
 
-**Generator ASCII Art modern untuk membuat banner teks dengan berbagai style, lalu langsung salin ke project kamu.**
+**Ubah teks jadi ASCII art dengan 36+ font. Gratis, tanpa login, tinggal copy dan tempel ke project kamu.**
 
-[![Live Demo](https://img.shields.io/badge/demo-online-brightgreen?style=for-the-badge)](https://ascii-generator.netlify.app)
+[![Live Demo](https://img.shields.io/badge/demo-online-brightgreen?style=for-the-badge)](https://futuresdeveloper.netlify.app)
 [![Next.js](https://img.shields.io/badge/Next.js-black?style=for-the-badge&logo=next.js)](https://nextjs.org)
 [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow?style=for-the-badge)](LICENSE)
-[![Deploy to Netlify](https://img.shields.io/badge/Netlify-ready-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://app.netlify.com/start)
+[![Netlify](https://img.shields.io/badge/Netlify-ready-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://futuresdeveloper.netlify.app)
 
-[Live Demo](https://ascii-generator.netlify.app) · [Laporkan Bug](https://github.com/Ditthtzyriness/ascii-generator/issues) · [Request Fitur](https://github.com/Ditthtzyriness/ascii-generator/issues)
+[🌐 Live Demo](https://futuresdeveloper.netlify.app) · [🐛 Laporkan Bug](https://github.com/Ditthtzyriness/ascii-generator/issues) · [💡 Request Fitur](https://github.com/Ditthtzyriness/ascii-generator/issues)
 
 </div>
 
@@ -18,9 +18,7 @@
 
 ## 📖 Tentang
 
-**ASCII Generator** adalah web tool yang cepat dan simpel untuk developer yang butuh ASCII banner untuk terminal, bot, CLI tools, log aplikasi, atau project pribadi.
-
-Fokusnya: UI yang bersih, responsif, dan nyaman dipakai di desktop maupun mobile.
+**ASCII Forge** adalah generator ASCII art yang simpel, cepat, dan enak dipakai. Cocok untuk banner README, header file, CLI, Telegram bot, atau komentar kode: pilih font, lalu copy.
 
 ```text
  █████╗ ███████╗ ██████╗██╗██╗
@@ -49,33 +47,35 @@ Fokusnya: UI yang bersih, responsif, dan nyaman dipakai di desktop maupun mobile
 
 ## ✨ Fitur
 
-- 🎨 Banyak pilihan font ASCII
-- ⚡ Live preview saat mengetik
-- 🔀 Random style generator
-- 📋 Salin ASCII dengan satu klik
-- 💻 Salin dalam format kode:
-  - 🟨 JavaScript — `console.log()`
-  - 🔷 TypeScript — `console.log()`
-  - 🐍 Python — `print()`
-  - 🐚 Bash — `printf`
-  - 🐘 PHP — `echo`
-- 📥 Download hasil sebagai `.txt`
-- 🌙 Dark mode
-- 📱 Responsif untuk mobile
-- 🧩 Profile card
-- 🔌 API endpoint untuk kebutuhan programmatic
-- 🚀 Siap deploy ke Netlify
+- 🎨 **36+ font ASCII**: Standard, ANSI Shadow, Slant, Big, Doom, Graffiti, Star Wars, Sub-Zero, dan lainnya
+- ⚡ **Live preview** saat mengetik (maks. 120 karakter)
+- 🔀 **Acak font** dengan satu klik
+- 🔤 **Mode spasi huruf**: Default, Full, Fitted, Smush
+- ↔️ **Rata teks**: kiri, tengah, kanan
+- 📦 **Bungkus otomatis** sebagai komentar atau kotak:
+  - `//` untuk JS, C, Go
+  - `#` untuk Python, Shell
+  - `/* */` untuk CSS, C
+  - `<!-- -->` untuk HTML
+  - `--` untuk SQL, Lua
+  - `;;` untuk Lisp
+  - Kotak Unicode atau kotak ASCII (`+-|`)
+- 📏 **Lebar maksimal** 100 kolom dengan opsi potong otomatis
+- 🔗 **Share link**: pengaturan tersimpan di URL, mudah dibagikan
+- 📋 **Copy** hasil, atau **Copy sebagai `curl`**
+- 📥 **Download** sebagai `.txt`
+- 🌙 **Dark mode** dan tampilan responsif untuk mobile
+- 🔌 **API endpoint** untuk CLI dan script
 
 ## 🧰 Tech Stack
 
-| Teknologi  | Kegunaan                    |
-| ---------- | --------------------------- |
-| Next.js    | Framework aplikasi          |
-| React      | UI                          |
-| TypeScript | Type safety                 |
-| CSS        | Styling & responsive design |
-| Figlet     | Generate font ASCII         |
-| Netlify    | Deployment & hosting        |
+| Teknologi  | Kegunaan                |
+| ---------- | ----------------------- |
+| Next.js    | Framework (App Router)  |
+| React      | Komponen UI             |
+| TypeScript | Type safety             |
+| Figlet     | Engine ASCII            |
+| Netlify    | Deploy & runtime        |
 
 ## 🚀 Memulai
 
@@ -87,22 +87,15 @@ Fokusnya: UI yang bersih, responsif, dan nyaman dipakai di desktop maupun mobile
 ### Instalasi
 
 ```bash
-# Clone repository
 git clone https://github.com/Ditthtzyriness/ascii-generator.git
-
-# Masuk ke folder
 cd ascii-generator
-
-# Install dependency
 npm install
-
-# Jalankan development server
 npm run dev
 ```
 
 Buka [http://localhost:3000](http://localhost:3000) di browser.
 
-### Build untuk production
+### Build production
 
 ```bash
 npm run build
@@ -111,10 +104,10 @@ npm start
 
 ## 💡 Penggunaan
 
-1. Ketik teks yang diinginkan, misalnya `ASCII FORGE`.
-2. Pilih font/style, atau klik **Random**.
-3. Salin sebagai teks biasa atau format kode (JS, TS, Python, Bash, PHP).
-4. Tempel ke project kamu, atau download sebagai `.txt`.
+1. Ketik teks, misalnya `ASCII Forge`.
+2. Pilih font, atau klik **Acak font**.
+3. Atur spasi huruf, rata teks, dan gaya pembungkus (komentar/kotak).
+4. Klik **Copy**, **Download .txt**, atau **Share link**.
 
 ### Contoh output
 
@@ -123,11 +116,17 @@ npm start
 ```js
 console.log(`
 ========================
-          __         ____
-   / /_  ___  / / /___
-  / __ \/ _ \/ / / __ \
- / / / /  __/ / / /_/ /
-/_/ /_/\___/_/_/\____/
+            ___           ___           ___           ___           ___
+     /\  \         /\  \         /\  \         /\__\         |\__\
+    /::\  \        \:\  \       /::\  \       /::|  |        |:|  |
+   /:/\ \  \        \:\  \     /:/\:\  \     /:|:|  |        |:|  |
+  _\:\~\ \  \       /::\  \   /::\~\:\  \   /:/|:|  |__      |:|__|__
+ /\ \:\ \ \__\     /:/\:\__\ /:/\:\ \:\__\ /:/ |:| /\__\ ____/::::\__\
+ \:\ \:\ \/__/    /:/  \/__/ \/__\:\/:/  / \/__|:|/:/  / \::::/~~/~
+  \:\ \:\__\     /:/  /           \::/  /      |:/:/  /   ~~|:|~~|
+   \:\/:/  /     \/__/            /:/  /       |::/  /      |:|  |
+    \::/  /                      /:/  /        /:/  /       |:|  |
+     \/__/                       \/__/         \/__/         \|__|
 ========================
 `);
 ```
@@ -137,38 +136,40 @@ console.log(`
 ```python
 print("""
 ========================
-          __         ____
-   / /_  ___  / / /___
-  / __ \/ _ \/ / / __ \
- / / / /  __/ / / /_/ /
-/_/ /_/\___/_/_/\____/
+            ___           ___           ___           ___           ___
+     /\  \         /\  \         /\  \         /\__\         |\__\
+    /::\  \        \:\  \       /::\  \       /::|  |        |:|  |
+   /:/\ \  \        \:\  \     /:/\:\  \     /:|:|  |        |:|  |
+  _\:\~\ \  \       /::\  \   /::\~\:\  \   /:/|:|  |__      |:|__|__
+ /\ \:\ \ \__\     /:/\:\__\ /:/\:\ \:\__\ /:/ |:| /\__\ ____/::::\__\
+ \:\ \:\ \/__/    /:/  \/__/ \/__\:\/:/  / \/__|:|/:/  / \::::/~~/~
+  \:\ \:\__\     /:/  /           \::/  /      |:/:/  /   ~~|:|~~|
+   \:\/:/  /     \/__/            /:/  /       |::/  /      |:|  |
+    \::/  /                      /:/  /        /:/  /       |:|  |
+     \/__/                       \/__/         \/__/         \|__|
 ========================
 """)
 ```
 
-**Cocok untuk:** 🤖 Telegram Bot · 🖥️ CLI App · 🔧 Developer Tools · 📦 Open Source · 📝 README · 🚀 Startup Banner · 📟 Terminal App
+**Cocok untuk:** 🤖 Telegram Bot · 🖥️ CLI App · 🔧 Developer Tools · 📦 Open Source · 📝 README · 🚀 Startup Banner
 
 ## 🔌 API
 
-Generator menyediakan endpoint untuk dipakai aplikasi lain.
-
-**Endpoint**
+Panggil endpoint langsung dari terminal atau script.
 
 ```http
 GET /api/ascii
 ```
 
-**Query parameter**
+| Parameter | Tipe   | Wajib | Deskripsi                                  |
+| --------- | ------ | ----- | ------------------------------------------ |
+| `text`    | string | Ya    | Teks yang diubah jadi ASCII                |
+| `font`    | string | Tidak | Nama font Figlet (default: `Standard`)     |
 
-| Parameter | Tipe   | Wajib | Deskripsi                             |
-| --------- | ------ | ----- | ------------------------------------- |
-| `text`    | string | Ya    | Teks yang akan diubah jadi ASCII      |
-| `font`    | string | Tidak | Nama font Figlet (default: `Standard`) |
-
-**Contoh request**
+**Contoh**
 
 ```bash
-curl "https://ascii-generator.netlify.app/api/ascii?text=Hello&font=Standard"
+curl "https://futuresdeveloper.netlify.app/api/ascii?text=Hi&font=Slant"
 ```
 
 ## ☁️ Deployment
@@ -213,12 +214,12 @@ ascii-generator/
 Kontribusi sangat terbuka!
 
 1. Fork repository ini
-2. Buat branch fitur: `git checkout -b fitur/nama-fitur`
-3. Commit perubahan: `git commit -m "feat: tambah fitur X"`
+2. Buat branch: `git checkout -b fitur/nama-fitur`
+3. Commit: `git commit -m "feat: tambah fitur X"`
 4. Push: `git push origin fitur/nama-fitur`
 5. Buka Pull Request
 
-Menemukan bug atau punya ide? Silakan [buat Issue](https://github.com/Ditthtzyriness/ascii-generator/issues).
+Menemukan bug atau punya ide? [Buat Issue](https://github.com/Ditthtzyriness/ascii-generator/issues).
 
 ## 📄 Lisensi
 
@@ -226,7 +227,7 @@ Dirilis di bawah lisensi [MIT](LICENSE). Bebas digunakan, dimodifikasi, dan dike
 
 ## 👤 Developer
 
-**ditthtzyrine**
+**ditthtzyrine** · Full-Stack Developer
 
 - GitHub: [@Ditthtzyriness](https://github.com/Ditthtzyriness)
 - Portfolio: [ditthtzyriness.netlify.app](https://ditthtzyriness.netlify.app)
