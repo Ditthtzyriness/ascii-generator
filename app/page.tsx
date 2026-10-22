@@ -43,7 +43,7 @@ export default function Page() {
         <section className="feat">
           <div className="card"><div className="eyebrow">01</div><h3>Siap tempel</h3><p>Bungkus otomatis jadi komentar JS, Python, CSS, HTML, SQL, dan lainnya.</p></div>
           <div className="card"><div className="eyebrow">02</div><h3>Shareable</h3><p>Pengaturan generator disimpan di URL, jadi hasilnya gampang dibagikan ke teman.</p></div>
-          <div className="card"><div className="eyebrow">03</div><h3>API untuk CLI</h3><p>Panggil endpoint ASCII langsung dari terminal atau script.</p><code className="code">curl "https://DOMAINMU/api/ascii?text=Hi&font=Slant"</code></div>
+          <div className="card"><div className="eyebrow">03</div><h3>API untuk CLI</h3><p>Panggil endpoint ASCII langsung dari terminal atau script.</p><code className="code">curl "https://futuresdeveloper.netlify.app/api/ascii?text=Hi&font=Slant"</code></div>
         </section>
       </main>
       <footer><span>© {new Date().getFullYear()} {site.name} · ASCII Forge</span><span><a href={site.github} target="_blank" rel="noopener noreferrer">GitHub</a> · <a href={site.portfolio} target="_blank" rel="noopener noreferrer">Portfolio</a> · Netlify-ready</span></footer>
