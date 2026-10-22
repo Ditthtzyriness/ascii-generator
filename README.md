@@ -29,9 +29,6 @@
 ╚═╝  ╚═╝╚══════╝ ╚═════╝╚═╝╚═╝
 ```
 
-> 📸 **Tips:** tambahkan screenshot atau GIF demo di sini agar README lebih menarik.
-> `![Preview](public/preview.png)`
-
 ## 📑 Daftar Isi
 
 - [Fitur](#-fitur)
